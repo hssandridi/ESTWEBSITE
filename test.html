@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'Inscription - Espérance ST</title>
+    <link rel="stylesheet" href="formulaire.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="maison.html">Accueil</a></li>
+                <li><a href="players.html">Joueurs</a></li>
+                <li><a href="matches.html">Matchs</a></li>
+                <li><a href="news.html">Actualités</a></li>
+                <li><a href="test.html">Inscription</a></li>
+                <li><a href="login.html">login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section du formulaire -->
+    <section class="form-section">
+        <h1>Inscrivez-vous pour rejoindre l'Espérance ST</h1>
+        <form action="#" method="post">
+            <!-- Informations personnelles -->
+            <label for="">Nom complet :</label>
+            <input type="text" id="name" name="name" placeholder="Votre nom complet" required>
+            
+            <label for="">sexe :</label>
+            <div class="r">
+            <input type="radio" id="name" name="sexe">homme
+            <input type="radio" id="name" name="sexe">femme
+        </div>
+            <label for="">Âge :</label>
+            <input type="number" id="age" name="age" placeholder="Votre âge" required>
+            
+            <label for="">Adresse e-mail :</label>
+            <input type="email" id="email" name="email" placeholder="Votre e-mail" required>
+            
+            <label for="">Numéro de téléphone :</label>
+            <input type="tel" id="phone" name="phone" placeholder="Votre numéro de téléphone" required>
+            
+            <!-- Position préférée -->
+            <label for="">Poste préféré :</label>
+            <select id="position" name="position">
+                <option value="">Gardien</option>
+                <option value="">Défenseur</option>
+                <option value="">Milieu</option>
+                <option value="">Attaquant</option>
+            </select>
+            
+            <!-- Message -->
+            <label for="message">Pourquoi voulez-vous rejoindre l'équipe ?</label>
+            <textarea id="message" name="message" placeholder="Expliquez en quelques mots..." rows="5"></textarea>
+            
+            <!-- Bouton d'envoi -->
+            <button type="submit">Envoyer ma candidature</button>
+        </form>
+    </section>
+
+  <!-- Pied de page -->
+  <footer>
+    <p>&copy; 2024 Espérance Sportive de Tunis. Tous droits réservés.</p>
+
+
+
+
+<div class="soc">
+<a href="https://www.instagram.com/estofficiel?igsh=YzI0b2NsMXY4YnZh" target="_blank">
+    <img src="insta.png" alt="Instagram" class="so">
+</a>
+<a href="https://www.facebook.com/EsperanceSportiveDeTunis/" target="_blank">
+    <img src="fb.png" alt="Facebook" class="so">
+</a>
+</div>
+<p>Ce site web a été réalisé par <strong>hssan dridi</strong>, étudiant en première année Informatique de Gestion.</p>
+<img src="hssan.jpg" alt="Photo de hssan" class="photo">
+</footer>
+</body>
+</html>

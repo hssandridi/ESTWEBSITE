@@ -1,0 +1,138 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* تصميم العنوان */
+h1 {
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #e30613;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #918811;
+}
+
+/* الشريط العلوي */
+header {
+    background-color: #e30613;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffc20e;
+    text-decoration: none;
+    font-size: 18px;
+    background-color: black;
+    border-radius: 10px;
+    padding: 15px;
+    transition: 0.25s;
+}
+
+nav ul li a:hover {
+    color: black;
+}
+
+/* قسم المباريات */
+.matches-slider {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.slider-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+
+.slider-container::-webkit-scrollbar {
+    display: none;
+}
+
+.match-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 0 0 auto;
+    width: 250px;
+    padding: 20px;
+    scroll-snap-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.match-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.match-card .team-names {
+    font-size: 18px;
+    font-weight: bold;
+    color: #e30613;
+    margin-bottom: 10px;
+}
+
+.match-card .match-details {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+
+
+footer {
+    background-color: #050505; 
+    text-align: center;
+    padding: 20px 10px;
+    color: #800000; 
+    font-size: 14px;
+    position: relative;
+}
+ 
+  
+.photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 30%;
+    margin-top: -60px;
+    margin-right: -90%;   
+  }
+
+
+.soc {
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
+    margin-bottom: 10px;
+}
+
+.so {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease, opacity 0.3s ease; 
+}
+
+.so:hover {
+    transform: scale(1.2); 
+    opacity: 0.8; }

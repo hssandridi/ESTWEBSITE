@@ -1,0 +1,178 @@
+
+@keyframes colorChange {
+    0% { background-color: red; }
+    25% { background-color: rgb(230, 210, 39); }
+    50% { background-color: rgba(0, 0, 0, 0.795); }
+    75% { background-color: yellow; }
+    100% { background-color: red; }
+  }
+  
+  /* Tapply el animation 3al page */
+  body {
+    animation: colorChange 5s infinite; /* el animation yé9oum bé rotation b dor el wa9t */
+    
+    
+  }
+  
+/* --- Barre de navigation --- */
+header {
+    background-color: #e30613;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffc20e;
+    text-decoration: none;
+    font-size: 18px;
+    background-color: black;
+    border-radius: 10px;
+    padding: 15px;
+    transition: 0.25s;
+}
+ 
+nav ul li a:hover {
+    color: black;
+}
+/* Groupes de joueurs avec arrière-plan */
+.players-group {
+    text-align: center;
+    padding: 50px 0;
+    margin-bottom: 100px;
+    background-size:cover ; 
+    background-position: center;
+    color: white;
+    border-radius: 10px;
+}
+.players-group h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #fdd835;
+}
+
+/* Cartes des joueurs */
+.player-card {
+    display: inline-block;
+    position: relative;
+    width: 150px;
+    height: 250px;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #f3eeee;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.2s ;
+
+}
+.player-card:hover {
+    transform: scale(1.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ombre wadh7a akthar */
+    border-color: #fdd835;
+}
+
+.player-card h3,
+.player-card p {
+    position: relative;
+    z-index: 2;
+}
+
+.player-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.player-card p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.player-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    z-index: 1;
+}
+
+
+footer {
+    background-color: #050505; 
+    text-align: center;
+    padding: 20px 10px;
+    color: #800000; 
+    font-size: 14px;
+    position: relative;
+}
+ 
+  
+.photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 30%;
+    margin-top: -60px;
+    margin-right: -90%;   
+  }
+
+
+.soc {
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
+    margin-bottom: 10px;
+}
+
+.so {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease, opacity 0.3s ease; 
+}
+
+.so:hover {
+    transform: scale(1.2); 
+    opacity: 0.8; 
+}
+
+/* Animation: Fade-in w pulse */
+@keyframes fadeAndScale {
+    0% {
+      opacity: 0;
+      transform: scale(0.8); /* Tkoun sghira fel bedaya */
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.1); /* Tkoun kbira */
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1); /* Tkoun normale */
+    }
+  }
+  
+  /* Style lel h1 */
+  #jj {
+    font-size: 40px;
+    color: #0e0105c2; 
+    font-family: 'Arial', sans-serif;
+    text-align: center; 
+    margin-top: 20px;
+    animation: fadeAndScale 3s ease-in-out infinite; /* Apply l’animation */
+  }
+  
